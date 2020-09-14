@@ -1,0 +1,28 @@
+h1{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #556B2F;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	color: #008B8B;
+}
+
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #556B2F;
+	font-weight: 400px;
+}
+
+p {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #1a1a00;
+	
+
+}
+
+div{
+	text-align: center;
+	color: #556B2F;
+}
