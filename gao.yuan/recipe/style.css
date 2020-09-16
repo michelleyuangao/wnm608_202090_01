@@ -1,8 +1,15 @@
+
+body{
+	margin: 90px;
+
+}
+
 h1{
 	font-family: 'Josefin Sans', sans-serif;
 	color: #556B2F;
 	text-align: center;
 }
+
 
 h2 {
 	text-align: center;
@@ -16,23 +23,52 @@ h3 {
 }
 
 body {
-  background-color: lightblue;
+  background-color: #FFF8DC;
 }
 
 p {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #1a1a00;
-	
-
 }
-
 div{
 	text-align: center;
 	color: #556B2F;
 }
 
-p {
+
+li{
+	list-style-type:none;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+ul {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #4682B4;
+}
+
+
+div{
 	font-family: 'Roboto Slab', serif;
 	text-align: center;
-	color: #008B8B;
+	color: #B8860B;
+}
+
+a:link, a:visited {
+  background-color: #FFC0CB;
+  color: white;
+  padding: 14px 25px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #20B2AA;
+}
+
+img {
+  float: left;
+  margin: 40px;
 }
