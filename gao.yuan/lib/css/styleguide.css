@@ -547,11 +547,6 @@ a:hover {
 
 
 
-
-
-
-
-
 .icon {
     display: inline-block;
     width: 1.5em;
@@ -587,3 +582,42 @@ a:hover {
 .toggle input:checked + label::after {
    transform:translateX(1em);
 }
+
+
+
+.product-price {
+  font-family: 'Baloo Tammudu 2', cursive, sans-serif;
+  font-weight: bold 600;
+  color: #5ba683;
+}
+
+.product-title {
+  font-family: 'Baloo Tammudu 2', cursive, sans-serif;
+  font-weight: bold 700;  
+  color: #ce5d53;
+
+}
+
+
+
+.product-description {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #5ba683;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
