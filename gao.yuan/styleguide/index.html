@@ -5,14 +5,10 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Styleguide</title>
 
-   <base href="aau/wnm608/gao.yuan">
+   <base href="/aau/wnm608/gao.yuan/">
 
 
-<<<<<<< HEAD
-   <link rel="stylesheet" href="styleguide.css">
-=======
    <link rel="stylesheet" href="lib/css/styleguide.css">
->>>>>>> d57054a39da614693d17074104ec13babeec122c
    <link rel="stylesheet" href="lib/css/gridsystem.css">
    <link rel="stylesheet" href="css/storetheme.css">
 </head>
@@ -47,7 +43,12 @@
       <h2>Typography</h2>
       <div class="card soft">
 
-         <h3>Headings</h3>
+         <h4>Fonts: </h4>
+         <div class="well">
+            <p>Heading:  Baloo Tammudu 2</p>
+            <p>Body: rubik</p>
+            
+         </div>
 
 
          <h4>Code</h4>
@@ -266,7 +267,7 @@
    <div class="container">
       <h2>View Window</h2>
 
-      <div class="view-window" style="background-image:url(img/mountains001.jpg)"></div>
+      <div class="view-window" style="background-image:url(img/YumDonuts_logo.png)"></div>
    </div>
 
 
@@ -328,6 +329,14 @@
       <div class="card soft">
          <h3>Breadcrumb Nav</h3>
          <script>makeNav('nav crumbs')</script>
+      </div>
+
+
+      <div class="topnav">
+      <a class="active" href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#contact">cart</a>
+      <input type="text" placeholder="Search..">
       </div>
    </div>
 
@@ -447,6 +456,19 @@
                   <input id="example-search" type="search" placeholder="Text" class="form-input">
                </div>
             </div>
+            <h3>Text input fields</h3>
+
+               <form>
+                 <label for="fname">First name:</label><br>
+                 <input type="text" id="fname" name="fname" value="John"><br>
+                 <label for="lname">Last name:</label><br>
+                 <input type="text" id="lname" name="lname" value="Doe">
+                 <input type="submit" value="Submit">
+               </form>
+
+               <p>Note that the form itself is not visible.</p>
+
+               <p>Also note that the default width of text input fields is 20 characters.</p>
          </form>
 
          <h3>Buttons</h3>
@@ -454,26 +476,44 @@
          <div class="form-control">
             <button type="button" class="form-button">Button</button>
          </div>
+
          <div class="form-control">
             <input type="button" class="form-button" value="Button">
          </div>
+
          <div class="form-control">
             <div class="display-flex flex-align-center">
                <div class="flex-stretch">Chose on the right</div>
+
                <div class="flex-none"><a href="#" class="form-button">Button</a></div>
+
             </div>
          </div>
+
          <div class="form-control">
             <a href="#" class="btn sell">Button</a>
          </div>
+
          <div class="form-control">
             <a href="#" class="btn inline">Button</a>
             <a href="#" class="btn inline">Button</a>
          </div>
 
+         <h3>Pill Buttons</h3>
+
+            <button class="primarybutton">primary button</button>
+            <button class="secondarybutton">secondary button</button>
+
+         <h3>Next and Previous Buttons</h3>
+         <a href="#" class="previous">&laquo; Previous</a>
+         <a href="#" class="next">Next &raquo;</a>
+
+         <a href="#" class="previous round">&#8249;</a>
+         <a href="#" class="next round">&#8250;</a>
+
          <h3>Hotdog</h3>
 
-         <div class="hotdog">hotdog</div>
+         <div class="hotdog">search</div>
 
          <form>
             <input type="search" class="hotdog dark">
@@ -481,7 +521,7 @@
          <form>
             <div class="form-control">
                <div class="hotdog">
-                  <img src="img/icons/email.svg" alt="" class="icon">
+                  <img src="img/icon/search.png" alt="" class="icon">
                   <input type="text" id="example-email">
                </div>
             </div>
@@ -489,7 +529,7 @@
             <div class="form-control">
                <div class="hotdog">
                   <input type="password" id="example-password">
-                  <img src="img/icons/password.svg" alt="" class="icon">
+                  <img src="img/icon/search.png" alt="" class="icon">
                </div>
             </div>
          </form>
@@ -547,7 +587,7 @@
       <div class="well">
          <h3>Figure</h3>
          <figure>
-            <img src="https://via.placeholder.com/600x600" alt="">
+            <img src="img/11.png" alt="donuts">
             <figcaption>This is an image</figcaption>
          </figure>
 

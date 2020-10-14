@@ -22,32 +22,39 @@
 body {
    margin:0;
    font-size:100%;
-   font-family:Helvetica, Arial, sans-serif;
+   font-family: 'Rubik', sans-serif, Arial;
 }
 
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
-   font-family:Cambria, Georgia, "Times New Roman", serif;
+   font-family: 'Baloo Tammudu 2', cursive, serif;
 }
+
+h4,{
+    color: #f3ba8e;
+}
+
 
 a {
    text-decoration: none;
    font-weight: bold;
-   color:inherit;
+   color:#f28a80;
 }
 a:hover {
    text-decoration: underline;
 }
 
 p::first-letter {
-   margin-left:2em;
+   margin-left:0em;
+
 }
 
-
+p{
+  font-family: 'Rubik', sans-serif, Arial;
+}
 
 
 
@@ -92,6 +99,7 @@ code {
    margin-top:0;
    margin-bottom:0;
    padding-left:0;
+   font-family:'Baloo Tammudu 2';
 }
    .nav a {
       display:block;
@@ -99,7 +107,7 @@ code {
    }
    .nav a:hover {
       background-color:var(--color-main-medium);
-      color: var(--color-white);
+      color: var(--color-main-dark);
       text-decoration:none;
    }
 
@@ -108,16 +116,18 @@ code {
    .nav.stretch ul,
    .nav.flex ul {
       display:flex;
+      font-family:'Baloo Tammudu 2';
    }
 
    .nav.stretch li {
       flex: 1 1 auto;
       text-align:center;
+
    }
 
    .nav.pills a {
       border-radius:2em;
-      padding:0.5em 1em;
+      padding:0.5em 1.5em;
    }
 
 
@@ -130,24 +140,85 @@ code {
       text-decoration:underline;
    }
    .nav.crumbs li:not(:first-child)::before {
-      content:'â†’';
+      content:'<';
       font-family:arial;
    }
 
 
 
 .navbar {
-   background-color:var(--color-neutral-dark);
-   color:var(--color-neutral-light);
+   background-color:var(color-white);
+   color:#ce5d53;
    line-height:var(--header-height);
 }
 .navbar h1 {
-   font-size:1em;
-   font-family:Helvetica, Arial, sans-serif;
+   font-size: 1.5em;
+   font-family: 'Baloo Tammudu 2', cursive, serif;
    margin:0;
 }
 .navbar a {
-   padding:0 0.5em;
+   padding: 0 0.5em;
+}
+
+
+
+.topnav {
+  font-family: 'Baloo Tammudu 2', cursive, serif;
+}
+/* Add a black background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #ce5d53;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
 }
 
 
@@ -180,7 +251,7 @@ code {
 
    .card.soft {
       border-radius:0.5em;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(255, 218, 196, 3);
    }
    .card.hard {
       border-radius:0.2em;
@@ -196,7 +267,7 @@ code {
    }
 
    .card.rainbow {
-      background-image:linear-gradient(-45deg,#ffaac1,#e8fb8f,#a0a0f6);
+      background-image:linear-gradient(-45deg,#f28a80,#f3b18e,#ffdac4,#f2e5a0);
    }
 
    .card.flat {
@@ -204,10 +275,13 @@ code {
    }
 
 
+ 
+
+
 
 .well {
     padding: 0.5em;
-    background-color: var(--color-neutral-light);
+    background-color: #fcf9e9;
     margin: 1px;
 }
 .well .well {
@@ -215,18 +289,11 @@ code {
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d57054a39da614693d17074104ec13babeec122c
 
 
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> d57054a39da614693d17074104ec13babeec122c
 /* TABLES */
 .table {
    width:100%;
@@ -300,21 +367,6 @@ code {
     cursor: pointer;
     outline: 0;
     -webkit-appearance:none;
-<<<<<<< HEAD
-}
-.btn:hover,
-.form-button:hover {
-   text-decoration:none;
-}
-
-   .btn.inline {
-      width:initial;
-   }
-
-   .btn.sell {
-      background-color:var(--color-purchase);
-   }
-=======
 }
 .btn:hover,
 .form-button:hover {
@@ -329,6 +381,67 @@ code {
       background-color:var(--color-purchase);
    }
 
+
+  .primarybutton {
+  background-color: #ce5d53;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 26px;
+}
+
+  .primarybutton:hover {
+  background-color: #f1f1f1;
+}
+
+.secondarybutton{
+  background-color: var(--color-white);
+  border: 2px solid var(--color-neutral-dark);
+  color: #ce5d53;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 26px;
+}
+.secondarybutton:hover {
+  background-color: #f1f1f1;
+  border: 2px solid var(--color-neutral-light);
+}
+
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #ce5d53;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
 
 
 
@@ -389,77 +502,6 @@ code {
 
 
 
->>>>>>> d57054a39da614693d17074104ec13babeec122c
-
-
-
-
-<<<<<<< HEAD
-
-.hotdog {
-   display: inline-flex;
-   width: 100%;
-   /* line-height: 3rem; */
-   font: inherit;
-   background-color: var(--color-neutral-light);
-   padding: 0.5em 1.5em;
-   border-radius: 2em;
-   border-width:0;
-   outline:0;
-=======
-.icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: text-bottom;
->>>>>>> d57054a39da614693d17074104ec13babeec122c
-}
-   .hotdog.dark {
-      background-color: var(--color-neutral-dark);
-      color: var(--color-neutral-light);
-   }
-
-   .hotdog input {
-      background-color:transparent;
-      border-width:0;
-      flex:1 1 100%;
-      outline:0;
-      font:inherit;
-   }
-
-
-
-<<<<<<< HEAD
-.form-select>select {
-    padding: 0.5em 1em;
-    background-color: var(--color-neutral-light);
-    border-width: 0;
-    border-radius: 0.3em;
-    cursor: pointer;
-    -webkit-appearance:none;
-    display:inline-block;
-    width:100%;
-    font:inherit;
-    outline:0;
-}
-.form-select {
-   position:relative;
-}
-.form-select::after {
-   position:absolute;
-   content:'â–¼';
-   font-family:Arial,sans-serif;
-   font-size:0.9em;
-   top:50%;
-   transform:translateY(-50%);
-   right:0.3rem;
-   pointer-events:none;
-   color:var(--color-neutral-medium);
-}
-
-
-
-
 
 
 
@@ -474,8 +516,6 @@ code {
 
 
 
-=======
->>>>>>> d57054a39da614693d17074104ec13babeec122c
 /* TOGGLE */
 .toggle label {
     display: inline-block;
@@ -500,9 +540,4 @@ code {
 }
 .toggle input:checked + label::after {
    transform:translateX(1em);
-<<<<<<< HEAD
 }
-
-=======
-}
->>>>>>> d57054a39da614693d17074104ec13babeec122c
