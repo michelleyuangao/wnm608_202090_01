@@ -215,11 +215,18 @@ code {
 }
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> d57054a39da614693d17074104ec13babeec122c
 
 
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> d57054a39da614693d17074104ec13babeec122c
 /* TABLES */
 .table {
    width:100%;
@@ -293,6 +300,21 @@ code {
     cursor: pointer;
     outline: 0;
     -webkit-appearance:none;
+<<<<<<< HEAD
+}
+.btn:hover,
+.form-button:hover {
+   text-decoration:none;
+}
+
+   .btn.inline {
+      width:initial;
+   }
+
+   .btn.sell {
+      background-color:var(--color-purchase);
+   }
+=======
 }
 .btn:hover,
 .form-button:hover {
@@ -367,6 +389,77 @@ code {
 
 
 
+>>>>>>> d57054a39da614693d17074104ec13babeec122c
+
+
+
+
+<<<<<<< HEAD
+
+.hotdog {
+   display: inline-flex;
+   width: 100%;
+   /* line-height: 3rem; */
+   font: inherit;
+   background-color: var(--color-neutral-light);
+   padding: 0.5em 1.5em;
+   border-radius: 2em;
+   border-width:0;
+   outline:0;
+=======
+.icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: text-bottom;
+>>>>>>> d57054a39da614693d17074104ec13babeec122c
+}
+   .hotdog.dark {
+      background-color: var(--color-neutral-dark);
+      color: var(--color-neutral-light);
+   }
+
+   .hotdog input {
+      background-color:transparent;
+      border-width:0;
+      flex:1 1 100%;
+      outline:0;
+      font:inherit;
+   }
+
+
+
+<<<<<<< HEAD
+.form-select>select {
+    padding: 0.5em 1em;
+    background-color: var(--color-neutral-light);
+    border-width: 0;
+    border-radius: 0.3em;
+    cursor: pointer;
+    -webkit-appearance:none;
+    display:inline-block;
+    width:100%;
+    font:inherit;
+    outline:0;
+}
+.form-select {
+   position:relative;
+}
+.form-select::after {
+   position:absolute;
+   content:'â–¼';
+   font-family:Arial,sans-serif;
+   font-size:0.9em;
+   top:50%;
+   transform:translateY(-50%);
+   right:0.3rem;
+   pointer-events:none;
+   color:var(--color-neutral-medium);
+}
+
+
+
+
 
 
 
@@ -381,6 +474,8 @@ code {
 
 
 
+=======
+>>>>>>> d57054a39da614693d17074104ec13babeec122c
 /* TOGGLE */
 .toggle label {
     display: inline-block;
@@ -405,5 +500,9 @@ code {
 }
 .toggle input:checked + label::after {
    transform:translateX(1em);
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> d57054a39da614693d17074104ec13babeec122c
