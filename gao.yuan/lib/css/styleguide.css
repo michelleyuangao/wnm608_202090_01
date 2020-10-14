@@ -223,6 +223,51 @@ code {
 
 
 
+/*sign up form */
+body {font-family:'Rubik', sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
 
 
 .view-window {
@@ -397,6 +442,7 @@ code {
 
   .primarybutton:hover {
   background-color: #f1f1f1;
+  color: #ce5d53;
 }
 
 .secondarybutton{
@@ -425,13 +471,13 @@ a {
 }
 
 a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #ffff;
+  color: #f28a80;
 }
 
 .previous {
   background-color: #f1f1f1;
-  color: black;
+  color: #ce5d53;
 }
 
 .next {
