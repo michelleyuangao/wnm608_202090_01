@@ -14,22 +14,23 @@
    
    <header class="navbar">
    <div class="container display-flex flex-align-center">
-      <div class="flex-none"><h1>Store Website</h1></div>
+      <div class="flex-none"><h1>Yum Donuts</h1></div>
       <div class="flex-stretch"></div>
       
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
       <nav class="nav flex-none">
          <ul class="display-flex">
             <li><a href="index.php">Home</a></li>
-            <li><a href="product_list.php">Store</a></li>
+            <li><a href="product_list.php">Donuts</a></li>
+            <li><a href="about.php">About</a></li>
          </ul>
       </nav>
    </div>
 </header>
 
 
-   <div class="view-window" style="background-image:url(img/mountains001.jpg)">
-      <h2>Product Name</h2>
+   <div class="view-window" style="background-image:url(img/background.jpg)">
+      <h2>Walcom to the store</h2>
    </div>
    <div class="container">
       <div class="card soft">

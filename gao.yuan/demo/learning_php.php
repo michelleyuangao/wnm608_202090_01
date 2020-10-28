@@ -163,17 +163,3 @@ function print_p($d) {
 
 print_p($_GET);
 print_p($colors);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
