@@ -9,6 +9,7 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="product_list.php">Donuts</a></li>
             <li><a href="about.php">About</a></li>
+            <li><a href="product_cart.php">Cart</a></li>
          </ul>
       </nav>
    </div>
