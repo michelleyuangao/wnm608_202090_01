@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" href="lib/css/styleguide.css">
+<link rel="stylesheet" href="lib/css/gridsystem.css">
 <link rel="stylesheet" href="css/storetheme.css">
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script></head>
@@ -35,7 +36,52 @@
    </div>
    <div class="container">
       <div class="card soft">
-         <h2>Welcome to the Store</h2>
+         
+         <h2>Explore Our Popular Donuts: </h2>
+
+
+         <div class="grid gap">
+            <div class="col-xs-12 col-md-4">
+               <figure class="product-item">
+                  <div class="product-image">
+                     <img src="img/chocolate_donuts.jpg" alt="">
+                  </div>
+                  <figcaption class="product-description">
+                     <div class="product-price">&dollar;3.99</div>
+                     <div class="product-title">Chocolate Cake</div>
+                     <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
+                  </figcaption>
+               </figure>
+            </div>
+                        <div class="col-xs-12 col-md-4">
+               <figure class="product-item">
+                  <div class="product-image">
+                     <img src="img/raised_strawberry_main.jpg" alt="">
+                  </div>
+                  <figcaption class="product-description">
+                     <div class="product-price">&dollar;3.99</div>
+                     <div class="product-title">Raised Strawberry with Rainbow Sprinkle</div>
+                     <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
+                  </figcaption>
+               </figure>
+            </div>
+
+                        <div class="col-xs-12 col-md-4">
+               <figure class="product-item">
+                  <div class="product-image">
+                     <img src="img/rainbow_sprinkle_main.jpg" alt="">
+                  </div>
+                  <figcaption class="product-description">
+                     <div class="product-price">&dollar;3.99</div>
+                     <div class="product-title">Raised Vanilla with Rainbow Sprinkle</div>
+                     <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
+                  </figcaption>
+               </figure>
+            </div>
+
+
+
+
       </div>
    </div>
 
