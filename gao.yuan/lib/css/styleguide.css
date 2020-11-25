@@ -64,6 +64,14 @@ code {
 }
 
 
+.image-main img {
+    width: 100%;
+}
+
+.image-thumbs img {
+  width: 120px;
+  object-fit: cover;
+}
 
 
 

@@ -1,3 +1,9 @@
+<?php
+
+include_once "lib/php/functions.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,10 +50,10 @@
             <div class="col-xs-12 col-md-4">
                <figure class="product-item">
                   <div class="product-image">
-                     <img src="img/chocolate_donuts.jpg" alt="">
+                     <img src="img/chocolate_donuts_main.jpg" alt="">
                   </div>
                   <figcaption class="product-description">
-                     <div class="product-price">&dollar;3.99</div>
+                     <div class="product-price">&dollar;3.50</div>
                      <div class="product-title">Chocolate Cake</div>
                      <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
                   </figcaption>
@@ -59,8 +65,8 @@
                      <img src="img/raised_strawberry_main.jpg" alt="">
                   </div>
                   <figcaption class="product-description">
-                     <div class="product-price">&dollar;3.99</div>
-                     <div class="product-title">Raised Strawberry with Rainbow Sprinkle</div>
+                     <div class="product-price">&dollar;4.50</div>
+                     <div class="product-title">Berry Rainbow</div>
                      <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
                   </figcaption>
                </figure>
@@ -72,8 +78,8 @@
                      <img src="img/rainbow_sprinkle_main.jpg" alt="">
                   </div>
                   <figcaption class="product-description">
-                     <div class="product-price">&dollar;3.99</div>
-                     <div class="product-title">Raised Vanilla with Rainbow Sprinkle</div>
+                     <div class="product-price">&dollar;5.00</div>
+                     <div class="product-title">Vanilla Rainbow</div>
                      <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
                   </figcaption>
                </figure>
