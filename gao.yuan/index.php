@@ -56,6 +56,7 @@ include_once "lib/php/functions.php";
                      <div class="product-price">&dollar;3.50</div>
                      <div class="product-title">Chocolate Cake</div>
                      <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
+                     <a href="product_item.php?id=10" class="primarybutton">View Detail</a>
                   </figcaption>
                </figure>
             </div>
@@ -68,6 +69,7 @@ include_once "lib/php/functions.php";
                      <div class="product-price">&dollar;4.50</div>
                      <div class="product-title">Berry Rainbow</div>
                      <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
+                     <a href="product_item.php?id=7" class="primarybutton">View Detail</a>
                   </figcaption>
                </figure>
             </div>
@@ -81,6 +83,7 @@ include_once "lib/php/functions.php";
                      <div class="product-price">&dollar;5.00</div>
                      <div class="product-title">Vanilla Rainbow</div>
                      <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis</div>
+                     <a href="product_item.php?id=4" class="primarybutton">View Detail</a>
                   </figcaption>
                </figure>
             </div>

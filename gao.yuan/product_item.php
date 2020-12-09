@@ -74,7 +74,7 @@ $thumbs_elements = array_reduce($thumbs,function($r,$o){
                      </div>
                   </div>
                   <div class="form-control">
-                     <input type="submit" class="form-button" value="Add To Cart">
+                     <input type="submit" class="primarybutton" value="Add To Cart">
                   </div>
                </div>
             </form>

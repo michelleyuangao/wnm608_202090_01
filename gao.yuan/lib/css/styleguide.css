@@ -543,7 +543,7 @@ a:hover {
 }
 .form-select::after {
    position:absolute;
-   content:'â–¼';
+   content:'▼';
    font-family:Arial,sans-serif;
    font-size:0.9em;
    top:50%;
@@ -613,8 +613,6 @@ a:hover {
   font-weight: 400;
   color: #5ba683;
 }
-
-
 
 
 

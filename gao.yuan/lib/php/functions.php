@@ -37,11 +37,18 @@ function MYSQLIQuery($sql) {
    $result = $conn->query($sql);
    if($conn->errno) die($conn->error);
 
-   while($row = $result->fetch_object())
-      $a[] = $row;
+   // print_p([$conn,$result]);
+   // die;
+
+   if(@$result->num_rows) {
+      while($row = $result->fetch_object())
+         $a[] = $row;
+   }
+   if(@$conn->insert_id) return $conn->insert_id;
 
    return $a;
 }
+
 
 
 
@@ -115,4 +122,12 @@ function makeCartBadge() {
       // return count($cart);
       return array_reduce($cart,function($r,$o){return $r+$o->amount;});
    }
+}
+
+
+
+
+
+function setDefault($k,$v) {
+   if(!isset($_GET[$k])) $_GET[$k] = $v;
 }

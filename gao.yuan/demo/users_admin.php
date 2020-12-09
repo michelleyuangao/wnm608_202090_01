@@ -45,6 +45,15 @@ switch(@$_GET['crud']) {
       break;
 }
 
+   case 'delete':
+      array_splice($users,$_GET['id'],1);
+
+      file_put_contents($filename,json_encode($users));
+
+      header("location:{$_SERVER['PHP_SELF']}");
+      break;
+}
+
 
 
 
@@ -60,7 +69,14 @@ $createorupdate = $id=='new' ? 'create' : 'update';
 
 $userdata = $id=='new' ? '' : <<<HTML
 <div class="card soft">
-   <h2>$user->name</h2>
+   <div class="display-flex">
+      <h2 class="flex-stretch">$user->name</h2>
+      <div>
+         <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
+            <img src="img/icons/trash.svg" class="icon">
+         </a>
+      </div>
+   </div>
    <div>
       <strong>Type</strong>
       <span>$user->type</span>
@@ -75,6 +91,8 @@ $userdata = $id=='new' ? '' : <<<HTML
    </div>
 </div>
 HTML;
+
+
 
 echo <<<HTML
 <div class="card soft">
@@ -115,7 +133,6 @@ echo <<<HTML
 </div>
 HTML;
 }
-
 
 
 
