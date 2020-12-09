@@ -106,9 +106,8 @@ function makeStatement($type,$params=[]) {
                `price`,
                `category`,
                `description`,
-               `quantity`,
                `image_other`,
-               `image_thumb`,
+               `image_main`,
                `date_create`,
                `date_modify`
             )
@@ -120,7 +119,6 @@ function makeStatement($type,$params=[]) {
                '{$params[3]}',
                '{$params[4]}',
                '{$params[5]}',
-               '{$params[6]}',
                NOW(),
                NOW()
             )
@@ -135,10 +133,9 @@ function makeStatement($type,$params=[]) {
                `price` = '{$params[1]}',
                `category` = '{$params[2]}',
                `description` = '{$params[3]}',
-               `quantity` = '{$params[4]}',
-               `image_other` = '{$params[5]}',
-               `image_thumb` = '{$params[6]}'
-            WHERE `id` = {$params[7]}
+               `image_other` = '{$params[4]}',
+               `image_main` = '{$params[5]}'
+            WHERE `id` = {$params[6]}
             ");
          break;
 

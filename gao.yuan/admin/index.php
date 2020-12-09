@@ -13,15 +13,13 @@ setDefault('limit','12');
 $products = makeStatement("products_admin_all",[]);
 
 
-
 $empty_product = (object)[
-   "title"=>"Chocolate Love",
+   "name"=>"Chocolate Love",
    "price"=>"4",
    "category"=>"Raised Donuts",
-   "description"=>"Chocolate Cake with Rainbow Sprinkle on top.",
-   "quantity"=>"39",
-   "image_other"=>"chocolate_rainbow_1.jpg,chocolate_rainbow_2.jpg",
-   "image_thumb"=>"chocolate_rainbow_main.jpg"
+   "description"=>"WhiteChocolate Cake with Rainbow Sprinkle on top.",
+   "image_other"=>"img/white_chocolate_rainbow_1.jpg,img/white_chocolate_rainbow_2.jpg",
+   "image_main"=>"img/white_chocolate_rainbow_main.jpg"
 ];
 
 
@@ -30,13 +28,12 @@ switch(@$_GET['crud']) {
    case 'update':
 
       makeStatement("product_update",[
-         $_POST['product-title'],
+         $_POST['product-name'],
          $_POST['product-price'],
          $_POST['product-category'],
          $_POST['product-description'],
-         $_POST['product-quantity'],
          $_POST['product-image_other'],
-         $_POST['product-image_thumb'],
+         $_POST['product-image_main'],
          $_GET['id']
       ]);
 
@@ -47,13 +44,12 @@ switch(@$_GET['crud']) {
    case 'create':
 
       $id = makeStatement("product_insert",[
-         $_POST['product-title'],
+         $_POST['product-name'],
          $_POST['product-price'],
          $_POST['product-category'],
          $_POST['product-description'],
-         $_POST['product-quantity'],
          $_POST['product-image_other'],
-         $_POST['product-image_thumb']
+         $_POST['product-image_main']
       ]);
       header("location:{$_SERVER['PHP_SELF']}?id=$id");
       break;
@@ -77,10 +73,10 @@ function showProductPage($product) {
 
 $id = $_GET['id'];
 
-$thumbs = explode(",",$product->image_other);
+$main = explode(",",$product->image_other);
 
-$thumbs_elements = array_reduce($thumbs,function($r,$o){
-   return $r."<img src='/$o'>";
+$thumbs_elements = array_reduce($main,function($r,$o){
+   return $r."<img src='$o'>";
 });
 
 
@@ -95,7 +91,7 @@ $productdata = $id=='new' ? '' : <<<HTML
       <h2 class="flex-stretch">$product->name</h2>
       <div>
          <a href="{$_SERVER['PHP_SELF']}?id=$id&crud=delete">
-            <img src="img/icons/trash.svg" class="icon">
+            <img src="img/icon/trash.svg" class="icon">
          </a>
       </div>
    </div>
@@ -108,16 +104,12 @@ $productdata = $id=='new' ? '' : <<<HTML
       <span>&dollar;$product->price</span>
    </div>
    <div>
-      <strong>Quantity</strong>
-      <span>$product->quantity</span>
-   </div>
-   <div>
       <strong>Description</strong>
       <span>$product->description</span>
    </div>
    <div>
       <strong>Images</strong>
-      <div class="image-thumbs"><img src='$product->image_thumb'></div>
+      <div class="image-main"><img src='$product->image_main'></div>
       <div class="image-thumbs">$thumbs_elements</div>
    </div>
 </div>
@@ -138,8 +130,8 @@ echo <<<HTML
          <form method="post" action="{$_SERVER['PHP_SELF']}?id=$id&crud=$createorupdate">
             <h2>$addoredit Product</h2>
             <div class="form-control">
-               <label for="product-title" class="form-label">Title</label>
-               <input id="product-title" name="product-title" type="text" placeholder="Type product title" class="form-input" value="$product->title">
+               <label for="product-name" class="form-label">Name</label>
+               <input id="product-name" name="product-name" type="text" placeholder="Type product name" class="form-input" value="$product->name">
             </div>
             <div class="form-control">
                <label for="product-category" class="form-label">Category</label>
@@ -150,16 +142,12 @@ echo <<<HTML
                <input id="product-price" name="product-price" type="number" step="0.01" min="0" placeholder="Type product price" class="form-input" value="$product->price">
             </div>
             <div class="form-control">
-               <label for="product-quantity" class="form-label">Quantity</label>
-               <input id="product-quantity" name="product-quantity" type="text" placeholder="Type product quantity" class="form-input" value="$product->quantity">
-            </div>
-            <div class="form-control">
                <label for="product-description" class="form-label">Description</label>
                <textarea id="product-description" name="product-description" placeholder="Type product description" class="form-input">$product->description</textarea>
             </div>
             <div class="form-control">
-               <label for="product-image_thumb" class="form-label">Image Thumb</label>
-               <input id="product-image_thumb" name="product-image_thumb" type="text" placeholder="Type product image thumb" class="form-input" value="$product->image_thumb">
+               <label for="product-image_main" class="form-label">Image main</label>
+               <input id="product-image_main" name="product-image_main" type="text" placeholder="Type product image thumb" class="form-input" value="$product->image_main">
             </div>
             <div class="form-control">
                <label for="product-image_other" class="form-label">Image Others</label>

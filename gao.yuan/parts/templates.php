@@ -23,6 +23,7 @@ HTML;
 
 
 
+
 function selectAmount($amount=1,$total=10) {
    $output = "<select name='product-amount'>";
    for($i=1;$i<=$total;$i++) {
@@ -108,8 +109,8 @@ HTML;
 function makeAdminList($r,$o) {
 return $r.<<<HTML
 <div class="display-flex card flat soft">
-   <div class="flex-none image_thumb">
-      <img src="$o->image_thumb">
+   <div class="flex-none image-thumbs">
+      <img src="$o->image_main">
    </div>
    <div class="flex-stretch" style="padding:1em">
       <div><strong>$o->name</strong></div>
