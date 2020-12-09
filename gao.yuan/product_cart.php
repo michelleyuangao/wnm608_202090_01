@@ -46,5 +46,11 @@ $cart = getCartItems();
       </div>
    </div>
 
+
+<div class="footer">
+  <p>Copyright © 2020 Yum Donuts - All Rights Reserved.</p>
+</div>
+
+
 </body>
 </html>

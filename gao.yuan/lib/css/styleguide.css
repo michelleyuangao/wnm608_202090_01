@@ -30,7 +30,7 @@ h2,
 h3,
 h5,
 h6 {
-   font-family: 'Baloo Tammudu 2', cursive, serif;
+   font-family: 'Baloo Tammudu 2', roboto, serif;
 }
 
 h4,{
@@ -90,8 +90,9 @@ code {
 .display-inline-flex { display:inline-flex; }
 .display-inline-block { display:inline-block; }
 
-.flex-stretch { flex: 1 1 auto; }
-.flex-none { flex:none; }
+.flex-stretch { flex: 1 1 auto; margin: 5px;}
+.flex-none { flex:none; margin: 5px;}
+
 
 .flex-align-center { align-items:center; }
 .flex-justify-center { justify-content:center; }
@@ -258,7 +259,7 @@ hr {
 
 /* Add padding to container elements */
 .container {
-  padding: 16px;
+  padding: 6px;
 }
 
 /* Clear floats */
@@ -295,7 +296,7 @@ hr {
 .card {
    background-color:var(--color-white);
    padding:1em;
-   margin-top:1em;
+   margin-top:0em;
    margin-bottom:1em;
 
    position:relative;
@@ -324,7 +325,7 @@ hr {
    }
 
    .card.flat {
-      padding:0;
+      padding:1.5em;
    }
 
 
@@ -446,6 +447,7 @@ hr {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 26px;
+  margin: 1em;
 }
 
   .primarybutton:hover {
@@ -600,7 +602,7 @@ a:hover {
 }
 
 .product-title {
-  font-family: 'Baloo Tammudu 2', cursive, sans-serif;
+  font-family: 'Baloo Tammudu 2', roboto, sans-serif;
   font-weight: bold 700;  
   color: #ce5d53;
 
@@ -616,7 +618,15 @@ a:hover {
 
 
 
-
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f28a80;
+   color: white;
+   text-align: center;
+}
 
 
 

@@ -32,8 +32,8 @@ function makeSortOptions() {
    }
 }
 
-function makeHiddenValues($options) {
-   foreach(array_merge($_GET,$options) as $k=>$v) {
+function makeHiddenValues($options1,$options2) {
+   foreach(array_merge($options1,$options2) as $k=>$v) {
       echo "<input type='hidden' name='$k' value='$v'>\n";
    }
 }
@@ -62,7 +62,7 @@ $products = isset($result['error']) ? [] : $result;
 
       <form action="product_list.php" method="get" class="hotdog stack">
 
-         <input type="search" name="s" placeholder="Search for a product"
+         <input type="search" name="s" placeholder="Search for a donuts"
          value="<?= @$_GET['s'] ?>">
 
          <?
@@ -138,6 +138,11 @@ $products = isset($result['error']) ? [] : $result;
          <a href="admin">Product Admin</a>
       </div>
    </div>
+
+
+<div class="footer">
+  <p>Copyright © 2020 Yum Donuts - All Rights Reserved.</p>
+</div>
 
 </body>
 </html>

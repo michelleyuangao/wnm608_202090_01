@@ -20,5 +20,11 @@ include_once "lib/php/functions.php";
       </div>
    </div>
 
+
+<div class="footer">
+  <p>Copyright © 2020 Yum Donuts - All Rights Reserved.</p>
+</div>
+
+
 </body>
 </html>
