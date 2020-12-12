@@ -21,7 +21,9 @@ include_once "lib/php/functions.php";
    
    <header class="navbar">
    <div class="container display-flex flex-align-center">
-      <div class="flex-none"><h1>Yum Donuts</h1></div>
+      <!--<div class="flex-none"><h1>Yum Donuts</h1></div>--> 
+         <img src="img/logo.png" class="logo" alt="logo">
+
       <div class="flex-stretch"></div>
       
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
@@ -40,8 +42,10 @@ include_once "lib/php/functions.php";
    <div class="view-window" style="background-image:url(img/background.jpg)">
       <h2>Walcom to the store</h2>
    </div>
+
+
    <div class="container">
-      <div class="card soft">
+      <div class="card medium">
          
          <h2>Explore Our Popular Donuts: </h2>
 
@@ -68,7 +72,7 @@ include_once "lib/php/functions.php";
                   <figcaption class="product-description">
                      <div class="product-price">&dollar;4.50</div>
                      <div class="product-title">Berry Rainbow</div>
-                     <div class="product-description">They’re sweet & crisp on the outside, a cross between a cake donut & an old-fashioned donut on the inside, and packed with blueberry bliss. Mmmm…yumberry donuts!</div>
+                     <div class="product-description">They’re sweet & crisp on the outside, a cross between a cake donut & an old-fashioned donut on the inside, and packed with blueberry bliss. Select different sweetness! Mmmm…yumberry donuts!</div>
                      <a href="product_item.php?id=7" class="primarybutton">View Detail</a>
                   </figcaption>
                </figure>
@@ -93,6 +97,40 @@ include_once "lib/php/functions.php";
 
       </div>
    </div>
+
+     </div>
+
+<div class="view-window" style="background-image:url(img/party.jpg)">
+      <h2>Our Mission</h2>
+   </div>
+
+
+  <div class="container">
+      <div class="card dark">
+         
+         <h2>Our Mission</h2>
+         
+         <div class="grid gap">
+            <div class="col-xs-12 col-md-4">
+               <figure class="product-item">
+                  <div class="product-image">
+                     <img src="img/YumDonuts_logo.png" alt="">
+                  </div>
+               </figure>
+            </div>
+
+
+                        <div class="col-xs-12 col-md-8">
+               <figure class="product-item">
+
+                  <P style="color: #ce5d53;">Everything we do is about you. From chefs who create exciting new flavors, to crew members who know exactly how you want your drink—we prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time. That’s what America runs on.</P>
+                  
+               </figure>
+            </div>
+</div>
+
+
+
 
 
 <div class="footer">

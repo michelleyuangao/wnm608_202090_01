@@ -18,9 +18,16 @@ $cart_product = cartItemById($_GET['id']);
 
    <div class="container">
       <div class="card soft">
-         <h2>Added <?= $product->name ?> To Cart</h2>
 
-         <p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart.</p>
+         <div class="add_to_cart">
+            <h2>Added <?= $product->name ?> To Cart</h2>
+
+            <img src="<?= $product->image_main ?>" alt="image_main">
+
+            <p>There are now <?= $cart_product->amount ?> of <?= $product->name ?> in your cart.</p>
+         </div>
+
+         <br>
 
          <div class="display-flex">
             <div class="flex-none">

@@ -1,8 +1,9 @@
 <header class="navbar">
    <div class="container display-flex flex-align-center">
-      <div class="flex-none"><h1>Yum Donuts</h1></div>
+      <!--<div class="flex-none"><h1>Yum Donuts</h1></div>--> 
+         <img src="img/logo.png" class="logo" alt="logo">
+
       <div class="flex-stretch"></div>
-      
       <!-- nav.nav>ul>li*4>a[href=#article$]>{Link $} -->
       <nav class="nav flex-none">
          <ul class="display-flex">

@@ -36,6 +36,7 @@ h3,
 h5,
 h6 {
    font-family: 'Baloo Tammudu 2', roboto, serif;
+   text-align: center;
 }
 
 h4,{
@@ -426,6 +427,7 @@ hr {
     cursor: pointer;
     outline: 0;
     -webkit-appearance:none;
+    margin: 2px;
 }
 .btn:hover,
 .form-button:hover {
@@ -621,6 +623,37 @@ a:hover {
   color: #5ba683;
 }
 
+
+.address{
+  border: 5px outset #f3ba8e;
+  background-color: #ffe6e6;    
+  text-align: center;
+}
+
+img {
+    width: 30%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.location-image{
+  width: 200%;
+}
+
+
+.add_to_cart{
+  text-align: center;
+
+}
+
+.about{
+  text-align: center;
+}
+
+.logo{
+  max-width: 120px;
+}
 
 
 .footer {

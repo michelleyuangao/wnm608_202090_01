@@ -11,12 +11,32 @@ include_once "lib/php/functions.php";
 </head>
 <body>
 
+	<?php include "parts/navbar.php" ?>
+
 
    <div class="container">
       <div class="card soft">
+
+      	<div class="display center">
          <h2>Thanks for Purchasing</h2>
 
-         <a href="product_list.php">Back to shopping</a>
+         <img src="img/thank-you.svg" alt="party_image" style="display: block;">
+         </div>
+
+
+         <br>
+
+     
+
+
+            <div class="flex-stretch"></div>
+            <div class="flex-none">
+               <a href="product_list.php" class="form-button">Back to shopping</a>
+            </div>
+         
+
+
+     	</div>
       </div>
    </div>
 
