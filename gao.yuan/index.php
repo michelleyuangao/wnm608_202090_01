@@ -40,7 +40,7 @@ include_once "lib/php/functions.php";
 
 
    <div class="view-window" style="background-image:url(img/background.jpg)">
-      <h2>Walcom to the store</h2>
+      <h2>Welcome to YumDonuts</h2>
    </div>
 
 
@@ -123,11 +123,39 @@ include_once "lib/php/functions.php";
                         <div class="col-xs-12 col-md-8">
                <figure class="product-item">
 
-                  <P style="color: #ce5d53;">Everything we do is about you. From chefs who create exciting new flavors, to crew members who know exactly how you want your drink—we prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time. That’s what America runs on.</P>
+                  <P style="color: #ce5d53;">Everything we do is about you. From chefs who create exciting new flavors, to crew members who know exactly how sweet you want your donuts—we prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time. </P>
                   
                </figure>
             </div>
+
 </div>
+</div>
+</div>
+
+<br>
+
+
+
+
+<div class="container">
+      <div class="Card hard">
+
+        
+      <h2>Sign up for YumDonuts emails today to get your special discount.</h2>
+
+
+         <div class="form-control">
+         <div class="display-flex flex-align-center">
+               <input type="text" placeholder="Email Address" class="form-input">
+
+               <div class="flex-none"><a href="#" class="form-button">Subscribe</a></div>
+
+         </div>
+      </div>
+      </div>
+</div>
+
+
 
 
 

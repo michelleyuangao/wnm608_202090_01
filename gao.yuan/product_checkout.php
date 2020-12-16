@@ -31,14 +31,17 @@ include_once "parts/templates.php";
     <label for="email"><b>Email Address</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Your Password" name="Password" required>
-
     <label for="name"><b>Full Name</b></label>
     <input type="password" placeholder="Enter Your Full Name" name="name" required>
 
      <label for="address"><b>Your Address</b></label>
     <input type="password" placeholder="Enter Your Address" name="name" required>
+
+    <label for="name"><b>Card Number</b></label>
+    <input type="password" placeholder="Enter Your Card Number" name="name" required>
+
+     <label for="address"><b>Security Code</b></label>
+    <input type="password" placeholder="Enter Your 3 Digits Security Code" name="name" required>
 
     
     <label>
