@@ -44,9 +44,11 @@ include_once "lib/php/functions.php";
    </div>
 
 
-   <div class="container">
-      <div class="card medium">
-         
+   
+      <div class="card dark">
+
+        <div class="container">
+
          <h2>Explore Our Popular Donuts: </h2>
 
 
@@ -105,13 +107,15 @@ include_once "lib/php/functions.php";
    </div>
 
 
-  <div class="container">
-      <div class="card dark">
+ 
+      <div class="card medium">
+
+         <div class="container">
          
          <h2>Our Mission</h2>
          
          <div class="grid gap">
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-md-3">
                <figure class="product-item">
                   <div class="product-image">
                      <img src="img/YumDonuts_logo.png" alt="">
@@ -120,14 +124,14 @@ include_once "lib/php/functions.php";
             </div>
 
 
-                        <div class="col-xs-12 col-md-8">
+                        <div class="col-xs-12 col-md-9">
                <figure class="product-item">
 
                   <P style="color: #ce5d53;">Everything we do is about you. From chefs who create exciting new flavors, to crew members who know exactly how sweet you want your donuts—we prioritize what you need to get you on your way. We strive to keep you at your best, and we remain loyal to you, your tastes and your time. </P>
                   
                </figure>
             </div>
-
+         </div>
 </div>
 </div>
 </div>

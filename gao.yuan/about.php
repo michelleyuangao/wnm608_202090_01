@@ -13,24 +13,27 @@ include_once "lib/php/functions.php";
    
    <?php include "parts/navbar.php" ?>
 
-<div class="container">
+
       <div class="card basic">
+        <div class="container">
+
         <div class="about">
          <h1>About Yum Donuts</h1>
        
           <img src="img/party.jpg" alt="party_image">
-</div>
-</div>
+        </div>
+        </div>
+      </div>
 
 
         
-<div class="container">
-      <div class="card medium">
+
+      <div class="card dark">
+        <div class="container">
          <h2>Yummy donuts making people happy</h2>
 
 
-
-         <div class="card soft">
+         <div class="card basic">
 
           <div class="container">
 
@@ -41,17 +44,12 @@ include_once "lib/php/functions.php";
           Please be advised that any of our products may contain, or may have come in contact with, allergens including Eggs, Fish, Milk, Peanuts, Shellfish, Soy, Tree nuts, and Wheat. Before placing your order, please inform your server if a person in your party has a food allergy.</p>
           </div>
           </div>
-          </div>
-          
+        </div>
+      
 
 
-
-         <br>
-
-
+      
          <div class="container">
-      <div class="card dark">
-         
          <h2>Location</h2>
          
          <div class="grid gap">
@@ -73,6 +71,7 @@ include_once "lib/php/functions.php";
                   
                </figure>
             </div>
+          </div>
 </div>
 
 
